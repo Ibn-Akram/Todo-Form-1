@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Saira+Condensed:wght@300;500;800&display=swap" rel="stylesheet">
+    
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="alert alert-info"><h1>Simple Todo App</h1></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 bg-info">
+                <div class="card">
+                    <div class="card-title text-center"><h2>Enter Form</h2></div>
+                    <div class="card-body">
+                        <div class="edit-group">
+                            <div class="form-group">
+                                <label class="control-label" for="todoName">Todos</label>
+                                <input class="form-control" name="todoName" placeholder="Enter your todos..." type="text">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="todoDeadline">Deadline</label>
+                                <input class="form-control" name="todoDeadline" placeholder="Enter your todos..." type="date">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="todoTime">Todos</label>
+                                <input class="form-control" name="todoDeadlineTime" placeholder="Enter your todos..." type="time">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button id="addBtn" class="btn btn-success">
+                            <span class="fa fa-plus">
+                                Add
+                            </span>
+                        </button>
+                        <button id="editBtn" class="btn btn-info">
+                            <span class="fa fa-edit">
+                                Edit
+                            </span>
+                        </button>
+                        <button class="btn btn-danger">
+                            <span class="fa fa-ban">
+                                Remove
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 bg-warning">
+                <table class="table table-bordered table-stripped table-considered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Deadline</th>
+                            <th>Created date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
