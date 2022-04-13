@@ -1,6 +1,6 @@
 // class
 class Todo{
-    constructor(name,deadline){
+    constructor(name,time,deadline){
         const _deadline=new Date(deadline)
         this.name = name
         this.deadline = deadline
@@ -10,6 +10,7 @@ class Todo{
         this.month = _deadline.getMonth()
         this.day = _deadline.getDate()
         this.id = newuuid() 
+        this.time=time
     }
 }
 // Array
